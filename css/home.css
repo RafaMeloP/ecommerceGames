@@ -1,0 +1,47 @@
+#slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#btn{
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+#slider .seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.6);
+    height: 55px;
+    width: 25px;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 400ms;
+}
+#slider .seta:hover{
+    background-color: rgba(0,0,0,0.9);
+}
+#progresso{
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#progresso .bola{
+    border-radius: 32px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(250,250,250,0.6);
+}
+#progresso .bola + .bola{
+    margin-left: 5px;
+}
