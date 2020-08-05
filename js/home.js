@@ -42,7 +42,7 @@ function troca(dir) {
 }
 function trocaAut(){
     tempoTroca++;
-    if(tempoTroca>500) troca(1);
+    if(tempoTroca>300) troca(1);
     anima =requestAnimationFrame(trocaAut);
 }
 function inicia() {

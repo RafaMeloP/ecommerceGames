@@ -1,0 +1,53 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(85, 85, 235);
+    color: white;
+    padding-right: 5px;
+    font-weight: 700;
+    font-size: 18px;
+}
+#nav #logo{
+    cursor: pointer;
+}
+#nav #logo img{
+    width: 85px;
+    height: 85px;
+}
+#home,#jogos,#sobre,#cadastro{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+    border-radius: 16px;
+    margin-bottom: 4px;
+}
+#home:hover,#jogos:hover,#sobre:hover,#cadastro:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+#cadastro{
+    margin-right: 5px;
+}
+#cont{
+    margin-top: 90px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#cont iframe{
+    width: 100%;
+    height: 100%;
+}
