@@ -6,20 +6,21 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 #empresa,#politicas{
     width: 80%;
-    height: 250px;
+    height: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 25px;
-    margin-top: 15px;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 #empresa div,#politicas div{
     width: 40%;
+    height: 100%;
     text-align: justify;
     font-size: 13px;
 }
@@ -42,10 +43,10 @@ body{
     flex-direction: row-reverse;
 }
 #empresa img, #politicas img{
-    width: 500px;
-    height: 250px;
+    width: 50%;
+    height: 50%;
     border-radius: 8px;
-    margin-top: 15px;
+    margin-top: 8%;
 }
 h3{
     font-weight: 700;

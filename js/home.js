@@ -1,5 +1,6 @@
-var slider, proxSlider, botao, imgAtual = 1, novaImg = 1; tempoTroca = 0, anima="";
+var slider, proxSlider, botao, imgAtual = 1, novaImg = 1; tempoTroca = 0, anima = "";
 function carregaImagem(img) {
+    tempoTroca = 0;
     switch (imgAtual) {
         case 1:
             slider = document.getElementById("um");
@@ -34,16 +35,15 @@ function carregaImagem(img) {
 
 }
 function troca(dir) {
-    tempoTroca=0;
     novaImg += dir;
     if (novaImg > 3) novaImg = 1;
     else if (novaImg < 1) novaImg = 3;
     carregaImagem(novaImg);
 }
-function trocaAut(){
+function trocaAut() {
     tempoTroca++;
-    if(tempoTroca>300) troca(1);
-    anima =requestAnimationFrame(trocaAut);
+    if (tempoTroca > 300) troca(1);
+    anima = requestAnimationFrame(trocaAut);
 }
 function inicia() {
     botao = document.querySelectorAll(".seta");
@@ -53,6 +53,22 @@ function inicia() {
             if (direcao == "&lt;") troca(-1);
             else if (direcao == "&gt;") troca(1);
         });
+    }
+    for (var i = 0; i < 3; i++) {
+        switch (i) {
+            case 0:document.querySelector(".um").addEventListener("click", () => {
+                    carregaImagem(1);
+                });
+            break;
+            case 1:document.querySelector(".dois").addEventListener("click", () => {
+                    carregaImagem(2);
+                });
+            break;
+            case 2:document.querySelector(".tres").addEventListener("click", () => {
+                    carregaImagem(3);
+                });
+            break;
+        }
     }
     trocaAut();
 }
