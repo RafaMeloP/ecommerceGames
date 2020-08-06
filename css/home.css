@@ -10,10 +10,12 @@
     bottom: 0;
 }
 #controle{
-    margin-top: 27%;
+    margin-top: 20%;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -50,8 +52,9 @@ img{
     background-color: rgba(0,0,0,0.9);
 }
 #progresso{
+    position: absolute;
     display: flex;
-    margin-top: 200px;
+    bottom: 5px;
     width: 100%;
     justify-content: center;
     align-items: center;
