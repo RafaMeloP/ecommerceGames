@@ -13,7 +13,7 @@ body{
     color: white;
     padding-right: 5px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 100%;
 }
 #nav #logo{
     cursor: pointer;
@@ -40,7 +40,7 @@ body{
     margin-right: 5px;
 }
 #cont{
-    margin-top: 90px;
+    margin-top: 89px;
     position: absolute;
     left: 0;
     right: 0;

@@ -36,6 +36,24 @@ const jogos = [
         img: "https://encurtador.com.br/bknS1"
     },
     {
+        id: 7,
+        nome: "Doom Eternal",
+        quantidade: 0,
+        img: "https://encurtador.com.br/bknS1"
+    },
+    {
+        id: 8,
+        nome: "Doom Eternal",
+        quantidade: 0,
+        img: "https://encurtador.com.br/bknS1"
+    },
+    {
+        id: 9,
+        nome: "Doom Eternal",
+        quantidade: 0,
+        img: "https://encurtador.com.br/bknS1"
+    },
+    {
         id: 6,
         nome: "Cyberpunk 2077",
         quantidade: 0,
@@ -60,7 +78,7 @@ inicia = () => {
                     ${item.nome}
                 </div>
                 <div id="img">
-                    <img src="${item.img}" style="width:35.6vh; height:41vh;" alt="">
+                    <img src="${item.img}" style="width:100%; height:44vh;" alt="">
                 </div>
             </div>
         `;
@@ -120,7 +138,7 @@ carregaCarrinho = () => {
                             <h5><strong>${item.nome}</strong></h5>
                         </div>
                         <div id="quantidade">
-                            Quantidade(${item.quantidade})
+                            (${item.quantidade})
                             <img src="../img/del.png" id="${item.id}" class="excluir">
                         </div>
                     </div>

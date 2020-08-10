@@ -1,7 +1,8 @@
-body{
+body {
     font-family: 'Noto Sans JP', sans-serif;
 }
-#container{
+
+#container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -9,7 +10,8 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-#empresa,#politicas{
+
+#empresa, #politicas {
     width: 80%;
     height: 5%;
     display: flex;
@@ -18,50 +20,60 @@ body{
     margin-bottom: 5%;
     margin-top: 5%;
 }
-#empresa div,#politicas div{
+
+#empresa div, #politicas div {
     width: 40%;
     height: 100%;
     text-align: justify;
-    font-size: 13px;
+    font-size: 90%;
 }
-#empresa div{
+
+#empresa div {
     margin-right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#politicas div{
+
+#politicas div {
     margin-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#politicas{
+
+#politicas {
     margin-top: 20px;
     flex-direction: row-reverse;
 }
-#empresa img, #politicas img{
+
+#empresa img, #politicas img {
     width: 50%;
     height: 50%;
     border-radius: 8px;
     margin-top: 8%;
+    display: block;
 }
-h3{
+
+h3 {
     font-weight: 700;
     color: rgb(52, 90, 204);
 }
-h4{
+
+h4 {
     font-size: 15px;
     font-weight: 700;
     color: rgb(63, 63, 199);
 }
-p{
+
+p {
     font-weight: 600;
     color: rgb(34, 33, 33);
 }
-footer{
+
+footer {
     margin-top: 45px;
     width: 100%;
     height: auto;
@@ -70,26 +82,56 @@ footer{
     justify-content: center;
     align-items: center;
 }
-footer #redes{
+
+footer #redes {
     width: 20%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-left: 2%;
 }
-#instagram,#facebook,#email{
+
+#instagram, #facebook, #email {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
 }
-footer img{
-    width: 50px;
-    height: 50px;
+
+footer #redes img {
+    width: 80%;
+    height: 80%;
 }
-#nome{
+
+#nome {
     margin-top: 20px;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+@media(max-width:739px) {
+    #empresa, #politicas {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #empresa div {
+        width: 80%;
+        margin-right: 15px;
+    }
+    #politicas div {
+        width: 80%;
+        margin-left: 0;;
+    }
+    #empresa img, #politicas img {
+        width: 60%;
+        height: 60%;
+        display: block;
+    }
 }

@@ -5,20 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/cadastro.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <script src="../js/cadastro.js"></script>
     </head>
     <body>
         <div id="container">
             <div id="form">
                 <form action="">
-                    <input type="text" placeholder="Digite seu nome" require="require">
+                    <input type="text" placeholder="Digite seu nome" require="require" id="nome">
                     <input type="text" placeholder="Digite seu email" require="require">
                     <input type="password" placeholder="Digite sua senha" require="require">
-                    <input type="text" placeholder="Digite seu CEP" require="require">
+                    <input type="text" placeholder="Digite seu CEP" require="require" id="cep">
                     <div id="endereco">
-                        <input type="text" placeholder="Digite o estado">
-                        <select name="" id="" require="require">
-                            <option value="">Cidade</option>
-                        </select>
+                        <input type="text" placeholder="Digite o estado" id="estado" maxlength="2" readonly="readonly">
+                        <input type="text" placeholder="Digite a cidade" id="cidade" readonly="readonly">
                     </div>
                     <div id="botao">
                         <button type="submit">Cadastrar</button>
