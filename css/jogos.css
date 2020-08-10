@@ -9,7 +9,50 @@ body{
     justify-content: center;
     align-items: center;
 }
+#container #nav{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+#container #nav #carrinhoNav,#container #nav #conta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 400ms;
+}
+#container #nav #carrinhoNav:hover,#container #nav #conta:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+#container #nav #carrinhoNav{
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+#container #nav img{
+    width: 50px;
+    height: 50px;
+}
+#container #nav #carrinhoNav #num{
+    margin-left: 5px;
+    border-radius: 32px;
+    background-color: rgb(119, 201, 228);
+    color: white;
+    font-weight: 900;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #container #card{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,4 +99,148 @@ body{
 }
 #carrinho a:hover{
     text-decoration: underline;
+}
+#container #card #overlay{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: rgba(6, 143, 189,0.9);
+}
+#container #card:hover #overlay {
+    width: 100%;
+}
+#container #card #overlay button{
+    width: 70%;
+    background-color: rgb(147, 238, 56);
+    color: white;
+    margin-left: 20%;
+    border: 0;
+    border-radius: 4px;
+    height: 20%;
+    cursor: pointer;
+    transition: 400ms;
+    font-weight: 600;
+    font-size: 15px;
+}
+#container #card #overlay button:hover{
+    background-color: rgb(124, 197, 51);
+}
+#modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#modal.hidden{
+    display: none;
+}
+#modal #carrinho{
+    background-color: white;
+    width: 80%;
+    height: 95%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+}
+#modal .nav{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+#modal .nav #comprar{
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+}
+#modal .nav #comprar button{
+    height: 80%;
+    width: 20%;
+    border-radius: 4px;
+    border: 0;
+    background-color: rgb(145, 236, 54);
+    color: white;
+    font-weight: 900;
+    font-size: 90%;
+    cursor: pointer;
+    transition: 400ms;
+}
+#modal .nav #comprar button:hover{
+    background-color: rgb(125, 197, 52);
+}
+#modal .nav #sair{
+    font-weight: 900;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(223, 74, 74);
+}
+#modal #sair:hover{
+    color: rgb(180, 61, 61);
+}
+#modal #itens{
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+#modal #item{
+    height: 30%;
+    width: 20%;
+    border-radius: 4px;
+    box-shadow: 1px 3px 8px #000, -1px -3px 8px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+#item #nome{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 85%;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+#item #quantidade{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 70%;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+#item #quantidade img{
+    margin-top: 15%;
+    width: 40%;
+    height: 40%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#item #quantidade img:hover{
+    border: 1px solid black;
 }
