@@ -78,7 +78,7 @@ inicia = () => {
                     ${item.nome}
                 </div>
                 <div id="img">
-                    <img src="${item.img}" style="width:100%; height:44vh;" alt="">
+                    <img src="${item.img}" style="width:100%; height:44vh;" alt="${item.nome}">
                 </div>
             </div>
         `;
